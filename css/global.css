@@ -1,0 +1,66 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  background: #641544;
+}
+.home {
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto; /*não esmaga a imagem*/
+  display: block;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase; /*letra maiuscula*/
+  word-break: break-all; /*quebra palavra*/
+  max-width: 4ch; /*quebra em 4 letras*/
+}
+.icones-social {
+  max-width: 35px;
+}
+.icones-social:hover {
+  opacity: 80px;
+}
+.curriculo {
+  border: black;
+  height: 12px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.text-title-1 {
+  font-size: 64px;
+  color: white;
+}
+.text-paragraph-1 {
+  font-size: 20px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize; /*aumenta a primeira letra*/
+    max-width: initial !important; /*sempre irá escrever por cima de qualquer valor que vinher na frente*/
+  }
+}

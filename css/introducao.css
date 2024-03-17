@@ -1,0 +1,79 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  margin-top: 83px;
+  background: #641544;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125; /*valor multiplicado referente ao font-size*/
+  margin-bottom: 30px;
+  position: relative; /*refente ao position absolute para adicionar a posição da imagem*/
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center; /*acessa a imagem para adicionar como fundo*/
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1; /*adiciona o elemento atrás*/
+}
+
+.image-perfil {
+  max-width: 21rem;
+  box-shadow: white -40px 2px 200px -40px;
+  border-radius: 999px;
+  border: 0;
+  outline: 0;
+}
+.social-intro {
+  flex-direction: column;
+  /*lg:flex-col gap-3*/
+}
+.informacoes {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  /*diminui o texto proporcionalmente a tela*/
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  /*diminui a imagem e texto proporcionalmente a tela*/
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
+    /*diminui o background da imagem*/
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr; /*irá ocupar apenas 1 coluna*/
+  }
+  .introducao img {
+    /*a imagem desaparece ao chegar em 400px ou menos*/
+    display: none;
+  }
+}

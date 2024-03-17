@@ -1,0 +1,41 @@
+.header {
+  width: 100%; /*para de crescer quando chega no valor estabelecido*/
+  margin: 0 auto;
+  /*position: fixed;*/
+}
+.navegacao {
+  position: fixed;
+  top: 0px;
+  padding: 20px;
+  width: 100%;
+  left: 0px;
+  z-index: 1000;
+}
+
+.header-menu {
+  display: flex; /*item um ao lado do outro*/
+  flex-wrap: wrap; /*caso diminua mais do que o tamanho dele, comece a quebrar*/
+  gap: 10px;
+  justify-content: center;
+}
+
+.header-menu a {
+  font-size: 1.125rem; /*1 rem = 16px; então 18/16 = 1.125*/
+  line-height: 1.3; /*altura de linha*/
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a {
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+}
