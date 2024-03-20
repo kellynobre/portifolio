@@ -1,6 +1,7 @@
 .formacao {
-  background: #141414;
-  color: #ffffff;
+  background: #ffffff;
+  /*color: #ffffff;*/
+  font-family: "Poppins", sans-serif;
 }
 
 .formacao-container {
@@ -19,39 +20,46 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url("../img/detalhe.svg") no-repeat center;
+  background: url("../img/linha.png") no-repeat center;
   position: absolute;
   bottom: -50px;
   left: 20px;
+  /*rotate: 30deg;*/
 }
 
-.formacao .subtitulo {
-  color: #000000;
-  max-width: 5ch;
+.formacao .subtitulo-formacao {
+  color: #641544;
+  max-width: 4ch;
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  padding-top: 50%;
 }
 
 .formacao-texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  max-width: 40ch;
+  max-width: 100%;
   margin-bottom: 60px;
-  color: #a3a3a3;
+  color: #641544;
 }
 
 .formacao-texto strong {
-  color: #ffffff;
+  color: #641544;
 }
 
 .faculdade-lista {
   display: flex; /*um ao lado do outro*/
   flex-wrap: wrap; /*caso não caiba, quebre*/
   gap: 20px;
+  padding-left: 0;
   margin-bottom: 60px;
 }
 
 .faculdade {
   flex: 1; /*para ficar com tamanho padrão, um ao lado do outro*/
-  background: #000000;
+  background: #641544;
   padding: 20px;
   border-radius: 4px;
   display: flex;
@@ -59,9 +67,9 @@
 }
 
 .faculdade-tipo {
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  color: #a3a3a3;
+  color: white;
   margin-bottom: 10px; /*só funciona com o display flex e o flex-direction no .faculdade*/
 }
 
@@ -69,7 +77,8 @@
   flex: 1;
   font-size: 1.125rem;
   line-height: 1.4;
-  margin-bottom: 40px;
+  padding-bottom: 12px;
+  color: white;
   position: relative; /*para criar o pseudo elemento*/
 }
 
@@ -78,25 +87,32 @@
   content: "";
   display: block;
   width: 4px;
-  height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
+  height: 80px;
+  background: linear-gradient(#862e63, #ac6d93);
   position: absolute;
   left: -24px;
 }
 
 .faculdade-instituicao {
-  font-size: 1.125rem;
-  color: #a3a3a3;
+  font-size: 2rem;
+  color: white;
+}
+.status {
+  font-size: 1rem;
+  color: white;
+  padding-bottom: 25px;
 }
 
 .cursos {
   margin-bottom: 60px;
+  color: #641544;
 }
 
 .formacao-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #8f8f8f;
+  font-weight: 700;
+  color: #641544;
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
@@ -113,26 +129,32 @@
 }
 
 .cursos h3::before {
-  background: url("../img/cursos.svg") no-repeat center center;
+  background: url("../img/graduacao.png") no-repeat center center;
 }
 
 .idiomas h3::before {
-  background: url("../img/idiomas.svg") no-repeat center center;
+  background: url("../img/idioma.png") no-repeat center center;
 }
 
 .formacao-extra li {
   font-size: 1.125rem;
   line-height: 1.1;
+  font-weight: 500;
   margin-bottom: 20px;
+  color: #641544;
 }
 
 .formacao-extra span {
-  color: #8f8f8f;
+  color: #686367;
 }
 
 .cursos li {
   display: flex;
   justify-content: space-between;
+  color: #641544;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
 }
 
 @media (max-width: 800px) {

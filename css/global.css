@@ -6,11 +6,11 @@ body {
 .home {
   width: 100%;
 }
-.container {
+/*.container {
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
-}
+}*/
 h1,
 h2,
 h3,
@@ -34,6 +34,7 @@ img {
   text-transform: uppercase; /*letra maiuscula*/
   word-break: break-all; /*quebra palavra*/
   max-width: 4ch; /*quebra em 4 letras*/
+  padding-top: 50%;
 }
 .icones-social {
   max-width: 35px;
@@ -56,6 +57,9 @@ img {
 .text-paragraph-1 {
   font-size: 20px;
   color: white;
+}
+.text-estilo {
+  text-decoration-color: transparent;
 }
 @media (max-width: 800px) {
   .subtitulo {

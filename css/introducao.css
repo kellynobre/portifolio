@@ -1,29 +1,16 @@
 .introducao {
+  background-color: #641544;
+  width: 100%;
+  height: 100vh;
+}
+.introducao-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  /*gap: 100px;*/
   align-items: center;
-  margin-top: 83px;
-  background: #641544;
-}
-
-.introducao h1 {
-  font-size: 4.5rem;
-  line-height: 1.125; /*valor multiplicado referente ao font-size*/
-  margin-bottom: 30px;
-  position: relative; /*refente ao position absolute para adicionar a posição da imagem*/
-}
-
-.introducao h1::before {
-  content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url("../img/detalhe.svg") no-repeat center; /*acessa a imagem para adicionar como fundo*/
-  position: absolute;
-  top: -15px;
-  left: -40px;
-  z-index: -1; /*adiciona o elemento atrás*/
+  justify-items: center;
+  /*padding-top: 200px;*/
+  height: 100%;
 }
 
 .image-perfil {
@@ -34,14 +21,25 @@
   outline: 0;
 }
 .social-intro {
+  display: flex;
   flex-direction: column;
+  gap: 20px;
+  align-items: center;
   /*lg:flex-col gap-3*/
+}
+.apresentacao {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }
 .informacoes {
   display: flex;
   flex-direction: row-reverse;
   gap: 30px;
   align-items: center;
+  padding: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -59,12 +57,33 @@
   }
   .introducao h1 {
     font-size: 2rem;
+    text-align: center;
+  }
+  .introducao-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 130px;
   }
   .introducao h1::before {
     /*diminui o background da imagem*/
     width: 30px;
     height: 10px;
     left: 0px;
+  }
+  .text-paragraph-1 {
+    text-align: center;
+  }
+  .informacoes {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    justify-content: center;
+  }
+  .social-intro {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
   }
 }
 

@@ -1,0 +1,30 @@
+#projetos {
+  background-color: #641544;
+  width: 100%;
+  height: 100vh;
+}
+.projetos-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+.projetos-container .subtitulo {
+  color: white;
+  max-width: 4ch;
+}
+.projetos {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.subtitulo-projeto {
+  color: white;
+  max-width: 4ch;
+}
