@@ -5,22 +5,23 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  font-family: "Poppins", sans-serif;
 }
 
 .experiencia .subtitulo {
-  color: #e0e0e0;
+  color: #641544;
 }
 
 .experiencia-texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  max-width: 40ch;
+  max-width: 100%;
   margin-bottom: 60px;
-  color: #525252;
+  color: #641544;
 }
 
 .experiencia-texto strong {
-  color: #141414;
+  color: #641544;
 }
 
 .empresa {
@@ -28,7 +29,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 20px;
-  background: #f5f5f5;
+  background: #641544;
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
@@ -37,12 +38,14 @@
 .empresa::before {
   content: "";
   display: block;
-  width: 4px;
-  height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
+  width: 16px;
+  height: 100%;
+  background: linear-gradient(#862e63, #ac6d93);
   position: absolute;
-  top: 20px;
-  left: -4px;
+  top: 0;
+  left: -10px;
+  z-index: -1;
+  border-radius: 4px;
 }
 
 .empresa-ano {
@@ -51,7 +54,7 @@
   left: -100px;
   text-align: right;
   width: 80px;
-  color: #525252;
+  color: #8d8a8a;
   font-size: 0.875rem;
 }
 
@@ -59,12 +62,13 @@
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  color: white;
 }
 
 .empresa-texto {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #525252;
+  color: #c0b7b7;
 }
 
 .empresa-habilidades {

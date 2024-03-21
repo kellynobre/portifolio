@@ -54,13 +54,22 @@ img {
   font-size: 64px;
   color: white;
 }
+.text-title-2 {
+  font-size: 18px;
+  color: white;
+}
 .text-paragraph-1 {
   font-size: 20px;
+  color: white;
+}
+.text-paragraph-2 {
+  font-size: 16px;
   color: white;
 }
 .text-estilo {
   text-decoration-color: transparent;
 }
+
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;

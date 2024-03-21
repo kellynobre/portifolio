@@ -24,7 +24,7 @@
 
   <!--Menu-->
   <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
+    <div class="container ">
       <a class="navbar-brand me-auto" href="#"><img src="./img/anakelly_redondo.jpeg" alt="" class="image-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,19 +37,19 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item">
-              <a href="#" class="nav-link mx-lg-2 active" role="button" data-bs-toggle="button" aria-pressed="true">Página Inicial</a>
+              <a href="#" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Página inicial</a>
             </li>
             <li class="nav-item">
-              <a href="#formacao" class="nav-link mx-lg-2 active" role="button" data-bs-toggle="button" aria-pressed="true">Formação</a>
+              <a href="#formacao" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Formação</a>
             </li>
             <li class="nav-item">
-              <a href="#projetos" class="nav-link mx-lg-2 active" role="button" data-bs-toggle="button" aria-pressed="true">Projetos</a>
+              <a href="#projetos" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Projetos</a>
             </li>
             <li class="nav-item">
-              <a href="#experiencia" class="nav-link mx-lg-2 active" role="button" data-bs-toggle="button" aria-pressed="true">Experiência</a>
+              <a href="#experiencia" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Experiência</a>
             </li>
             <li class="nav-item">
-              <a href="#contato" class="nav-link mx-lg-2 active" role="button" data-bs-toggle="button" aria-pressed="true">Contato</a>
+              <a href="#contato" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Contato</a>
             </li>
           </ul>
         </div>
@@ -129,26 +129,38 @@
   </section>
 
   <!--Projetos-->
-  <!--<section id="projetos" class="projetos">
-
-    <div class="projetos-container">
-      <h2 class="subtitulo-projetos"> Projetos </h2>
-
-      <div class="lg:grid lg:grid-cols-3 flex flex-col gap-6">
-        <div class="border p-3 border-neutral-700 rounded-lg bg-neutral-800 flex flex-col gap-2 aos-init aos-animate" data-aos-anchor="#projects" data-aos="fade-left" data-aos-delay="200"><img src="/images/mt-sushi.png" class="h-[165px] object-cover rounded-lg" alt="">
-          <h3 class="text-lg font-semibold">Mr. T Sushi</h3>
-          <p class="text-neutral-300 font-medium leading-5">Landing page made with React and TypeScript.</p>
-          <footer class="flex gap-3 mt-3"><a target="_self" class="border border-primary-300 h-[2.75rem] px-3 flex items-center gap-3 text-black uppercase w-fit font-semibold text-[1.125rem] rounded-[1rem] transition bg-transparent text-primary-300 opacity-80 cursor-not-allowed opacity-80 cursor-not-allowed" disabled="true">Github</a><a href="https://mrtsushiuk.vercel.app/" target="_blank" class="border border-primary-300 h-[2.75rem] px-3 flex items-center gap-3 text-black uppercase w-fit font-semibold text-[1.125rem] rounded-[1rem] transition bg-primary-300 text-black opacity-100 opacity-100 cursor-pointer hover:bg-primary-500 hover:text-black" disabled="false">Demo</a></footer>
-        </div>
-      </div><button type="button" class="border border-primary-300 h-12 px-6 flex items-center gap-3 text-black uppercase w-fit font-semibold text-[1.125rem] rounded-[3rem] transition hover:bg-primary-500 hover:text-black bg-primary-300 max-w-[25rem] w-full justify-center py-2 aos-init aos-animate" data-aos-anchor="#projects" data-aos="fade-left" data-aos-delay="550">See all</button>
-    </div>
-  </section>-->
-
   <section class="projetos" id="projetos" aria-label="Projetos">
     <div class="projetos-container">
-      <h2 class="subtitulo">Pro je<br>tos</h2>
-      <div>
-        <p> Atualmente desenvolvendo pequenos projetos utilizando: <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> na <strong>Novadata</strong></p>
+      <h2 class="subtitulo">Pro je <br>tos</h2>
+      <h2 class="subtitulo-mobile">Projetos</h2>
+      <div class="todos-projetos">
+        <div class="projects">
+          <img src="/img/costura.jpg" class="image-projects" alt="">
+          <h3 class="text-title-2">Ana Claudia Confecções</h3>
+          <p class="text-paragraph-2 descricao-projeto">Landing page</p>
+          <p class="botoes-projects">
+            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
+            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="false">View</a>
+          </p>
+        </div>
+        <div class="projects">
+          <img src="/img/costura.jpg" class="image-projects" alt="">
+          <h3 class="text-title-2">Ana Claudia Confecções</h3>
+          <p class="text-paragraph-2 descricao-projeto">Landing page</p>
+          <p class="botoes-projects">
+            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
+            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="false">View</a>
+          </p>
+        </div>
+        <div class="projects">
+          <img src="/img/costura.jpg" class="image-projects" alt="">
+          <h3 class="text-title-2">Ana Claudia Confecções</h3>
+          <p class="text-paragraph-2 descricao-projeto">Landing page</p>
+          <p class="botoes-projects">
+            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
+            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="false">View</a>
+          </p>
+        </div>
 
       </div>
     </div>
@@ -156,9 +168,21 @@
 
   <!--Experiência-->
   <section class="experiencia" id="experiencia" aria-label="Experiência"> <!--aria-label define como ponto de referencia; e o id serve para quando clicar no botão experiencia mostrar as mesmas informações de experiencia em outra página porque está referenciado no link com # (link interno)-->
-    <h2 class="subtitulo">Experiência</h2> <!--foi adicionado a class para estabeler um estilo diferente ao h2 (global)-->
+    <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiencia-texto"> Atualmente desenvolvendo pequenos projetos utilizando: <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> na <strong>Novadata</strong></p> <!--strong destaca as palavras (negrito)-->
+      <p class="experiencia-texto"> Atualmente desenvolvendo pequenos projetos utilizando: <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong></p> <!--strong destaca as palavras (negrito)-->
+
+      <div class="empresa">
+        <span class="empresa-ano">2023</span>
+        <h3 class="empresa-titulo">Nova Data</h3>
+        <span class="empresa-titulo">Estágiaria</span>
+        <p class="empresa-texto">Desenvolvedora Front-End</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
 
       <div class="empresa">
         <span class="empresa-ano">2022</span>
@@ -205,17 +229,40 @@
 
     </div>
   </section>
-  <!--Contato-->
 
-  <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class="footer-texto">Ana Kelly Nobre Costa</p>
-      <ul class="footer-contato">
-        <li>anakelly.ka@gmail.com</li>
-        <li>+55 84 9850-4476</li>
-        <li><a href="/">@anakellyncosta</a></li>
-      </ul>
-      <p class="footer-copy">Ana Kelly. Alguns direitos reservados.</p>
+  <!--Contato-->
+  <section class="contato" id="contato" aria-label="Contato">
+    <div class="contato-container">
+      <h2 class="subtitulo">Con ta <br>to</h2>
+      <div class="contatos">
+        <form class="formulario-contato">
+          <input type="name" class="form-control box" id="floatingInput" placeholder="Nome:">
+          <input type="email" class="form-control box" id="floatingInput" placeholder="name@example.com">
+          <textarea class="form-control box" placeholder="Mensagem:" id="floatingTextarea2" style="height: 100px"></textarea>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <div class="social-contato">
+          <a href="https://www.linkedin.com/in/anakellynobrecosta/" target="_blank" title="LinkedIn"><img class=" icones-social" src="./img/linkedin.png" alt=""></a>
+          <a href="https://www.instagram.com/anakellyncosta/" target="_blank" title="Instagram"><img class="icones-social" src="./img/instagram.png" alt=""></a>
+          <a href="mailto:anakelly.ka@gmail.com" title="Email: anakelly.ka@gmail.com"><img class="icones-social" src="./img/email.png" alt=""></a>
+          <a href="https://wa.me/84998504476" target="_blank" title="Telefone:+5584998504476" class="icones-social"><img class="icones-social" src="./img/whatsapp.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Footer-->
+  <footer class="footer fixed-bottom" id="contato">
+    <div class="footer-container ">
+      <p class="footer-copy">Ana Kelly Nobre Costa</p>
+      <div class="social-footer">
+        <a href="https://www.linkedin.com/in/anakellynobrecosta/" target="_blank" title="LinkedIn"><img class=" icones-social" src="./img/linkedin.png" alt=""></a>
+        <a href="https://www.instagram.com/anakellyncosta/" target="_blank" title="Instagram"><img class="icones-social" src="./img/instagram.png" alt=""></a>
+        <a href="mailto:anakelly.ka@gmail.com" title="Email: anakelly.ka@gmail.com"><img class="icones-social" src="./img/email.png" alt=""></a>
+        <a href="https://wa.me/84998504476" target="_blank" title="Telefone:+5584998504476" class="icones-social"><img class="icones-social" src="./img/whatsapp.png" alt=""></a>
+      </div>
     </div>
   </footer>
 
