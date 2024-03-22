@@ -34,22 +34,22 @@
           <img src="./img/anakelly_redondo.jpeg" alt="" class="image-logo">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body btn-group" role="group" aria-label="Basic radio toggle button group">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item">
-              <a href="#" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Página inicial</a>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked><a href="#" class="nav-link mx-lg-2 btn btn-primary" for="btnradio1">Página inicial</a>
             </li>
             <li class="nav-item">
-              <a href="#formacao" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Formação</a>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"><a href="#formacao" class="nav-link mx-lg-2 btn btn-primary" for="btnradio2">Formação</a>
             </li>
             <li class="nav-item">
-              <a href="#projetos" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Projetos</a>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"><a href="#projetos" class="nav-link mx-lg-2 btn btn-primary" for="btnradio3">Projetos</a>
             </li>
             <li class="nav-item">
-              <a href="#experiencia" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Experiência</a>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"><a href="#experiencia" class="nav-link mx-lg-2 btn btn-primary" for="btnradio4">Experiência</a>
             </li>
             <li class="nav-item">
-              <a href="#contato" class="nav-link mx-lg-2 btn btn-default active" role="button" aria-pressed="true">Contato</a>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off"><a href="#contato" class="nav-link mx-lg-2 btn btn-primary" for="btnradio4">Contato</a>
             </li>
           </ul>
         </div>
@@ -66,8 +66,9 @@
           <a href="https://www.linkedin.com/in/anakellynobrecosta/" target="_blank" title="LinkedIn"><img class=" icones-social" src="./img/linkedin.png" alt=""></a>
           <a href="https://github.com/kellynobre" target="_blank" title="Github"><img class="icones-social" src="./img/github.png" alt=""></a>
           <a href="mailto:anakelly.ka@gmail.com" title="Email: anakelly.ka@gmail.com"><img class="icones-social" src="./img/email.png" alt=""></a>
-          <a href="https://wa.me/84998504476" title="Telefone:+5584998504476" class="icones-social"><img class="icones-social" src="./img/whatsapp.png" alt=""></a>
-          <a href="#" title="Curriculo" class="icones-social"><img class="icones-social" src="./img/documento.png" alt=""></a>
+          <a href="https://wa.me/84998504476" target="_blank" title="Telefone:+5584998504476" class="icones-social"><img class="icones-social" src="./img/whatsapp.png" alt=""></a>
+          <a href="./ANA_KELLY_NOBRE_COSTA.pdf" download="ANA_KELLY_NOBRE_COSTA.pdf" title="Curriculo" class="icones-social"><img class="icones-social" src="./img/documento.png" alt=""></a>
+
         </div>
       </div>
 
@@ -182,9 +183,10 @@
         </div>
 
         <div class="projects">
-          <img src="/img/clinica.jpg" class="image-projects" alt="">
+          <iframe class="image-projects" width="195" height="130" src="https://www.youtube.com/embed/z6K1K4jHISY?si=D0I2jPCYvFF3WUXJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!--<img src="/img/clinica.jpg" class="image-projects" alt="">-->
           <h3 class="text-title-2 text-project">RY Odontologia</h3>
-          <p class="text-paragraph-2 descricao-projeto">Site da clinica odontologica usando tecnologias para oferecer uma experiência informativa e acessível aos pacientes.</p>
+          <p class="text-paragraph-2 descricao-projeto">Site da clinica odontologica usando tecnologias que oferecem uma experiência acessível aos pacientes.</p>
           <p class="botoes-projects">
             <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
             <button type="button" class="botao-projects" data-bs-toggle="modal" data-bs-target="#Modal2">View</button>
@@ -229,9 +231,10 @@
         </div>
 
         <div class="projects">
-          <img src="/img/coffe.jpg" class="image-projects" alt="">
+          <iframe class="image-projects" width="195" height="130" src="https://www.youtube.com/embed/e1C_uiWHrGk?si=Ib-5AfaVlZrkN_F2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!--<img src="/img/coffe.jpg" class="image-projects" alt=""-->
           <h3 class="text-title-2 text-project">Coffe Pink</h3>
-          <p class="text-paragraph-2 descricao-projeto">Desenvolvimento de um site dinamico para cafeteria envolve tecnologias como HTML, CSS, JavaScript, React/Vue.js e Node.js/Django.</p>
+          <p class="text-paragraph-2 descricao-projeto">Desenvolvimento de um site para uma cafeteria com tecnologias como HTML, CSS, JavaScript, React/Vue.js, e Node.js/Django.</p>
           <div class="botoes-projects">
             <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
 
@@ -367,7 +370,6 @@
     </div>
   </section>
 
-
   <!--Footer-->
   <footer class="footer fixed-bottom" id="contato">
     <div class="footer-container ">
@@ -380,7 +382,6 @@
       </div>
     </div>
   </footer>
-
 
 </body>
 
