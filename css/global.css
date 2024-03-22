@@ -67,7 +67,7 @@ img {
   color: white;
 }
 .text-estilo {
-  text-decoration-color: transparent;
+  color: #c582abd6;
 }
 
 @media (max-width: 800px) {

@@ -71,6 +71,15 @@
 .offcanvas-header {
   background-color: #641544;
 }
+
+.text-apresentacao {
+  color: #3b0224;
+  text-align: center;
+}
+.paragraph-apresentacao {
+  text-align: justify;
+}
+
 @media (min-with: 991px) {
   .nav-link::before {
     content: "";

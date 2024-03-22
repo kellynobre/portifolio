@@ -72,15 +72,15 @@
       </div>
 
       <div class="apresentacao">
-        <h1 class="text-title-1">Ana Kelly<br><span class="text-estilo">Front-End</span> <br> Developer<br></h1> <!--br faz a quebra de linha-->
-        <p class="text-paragraph-1">Tenho 24 anos, sou Tec.Informática e estudante de Ciências e Tecnologia - C&T. Estou sempre em busca de conhecimento e de desafios nesse mundo tecnologico. </p>
+        <h1 class="text-title-1 text-apresentacao">Ana Kelly<br><span class="text-estilo">Front-End</span> <br> Developer<br></h1> <!--br faz a quebra de linha-->
+        <p class="text-paragraph-1 paragraph-apresentacao">Tenho 24 anos, sou Tec.Informática e estudante de Ciências e Tecnologia - C&T. Estou sempre em busca de conhecimento e de desafios nesse mundo tecnologico. </p>
       </div>
     </div>
   </section>
 
   <!--Formação-->
-  <section class="formacao" id="formacao" aria-label="Formação"> <!--a section vai pintar o conteudo de preto por trás da div-->
-    <div class="formacao-container">
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container subtitulo">
       <h2 class="subtitulo-formacao">For ma ção</h2>
       <div>
         <p class="formacao-texto">
@@ -131,35 +131,150 @@
   <!--Projetos-->
   <section class="projetos" id="projetos" aria-label="Projetos">
     <div class="projetos-container">
-      <h2 class="subtitulo">Pro je <br>tos</h2>
-      <h2 class="subtitulo-mobile">Projetos</h2>
+      <h2 class="subtitulo-projetos subtitulo">Pro je <br>tos</h2>
+
       <div class="todos-projetos">
         <div class="projects">
           <img src="/img/costura.jpg" class="image-projects" alt="">
-          <h3 class="text-title-2">Ana Claudia Confecções</h3>
-          <p class="text-paragraph-2 descricao-projeto">Landing page</p>
+          <h3 class="text-title-2 text-project">Ana Claudia Confecções</h3>
+          <p class="text-paragraph-2 descricao-projeto">Site desenvolvido para solicitações de costomização de roupas. Combinando tecnologias como <span class="tecnologias-projetos">HTML, CSS, JavaScript</span>.</p>
           <p class="botoes-projects">
             <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
-            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="false">View</a>
+            <button type="button" class="botao-projects" data-bs-toggle="modal" data-bs-target="#Modal1">View</button>
           </p>
         </div>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ana Claudia Confecções</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  O desenvolvimento de um site de costura envolve a criação de um ambiente online intuitivo e atrativo, combinando tecnologias como HTML, CSS, JavaScript, frameworks front-end e backend, além de integrações com bancos de dados e sistemas de pagamento. Funcionalidades essenciais incluem catálogo de produtos, serviços personalizados, blog, área do cliente e suporte. Após testes de qualidade, o site é lançado para estabelecer uma comunidade de entusiastas da costura, combinando tradição com inovação tecnológica.
+                </p>
+                <p><span class="text-modal">Nome:</span> Ana Claudia Confecções <br>
+                  <span class="text-modal">Site Oficial:</span> www.acconfeccoes.com <br>
+                  Definição da Tecnologia: O site CosturaOnline é desenvolvido utilizando uma combinação de tecnologias modernas, incluindo HTML, CSS, JavaScript, e frameworks front-end como React. Para o backend, utilizou tecnologia Django. Bancos de dados como MySQL para armazenar informações sobre produtos, usuários e pedidos.<br>
+                  <span class="text-modal">Prós:</span><br>
+                  <span class="text-modal">Facilidade de Acesso:</span> O site oferece uma plataforma online para entusiastas da costura acessarem uma ampla variedade de produtos e serviços de forma conveniente.<br>
+                  <span class="text-modal">Personalização: </span> Os clientes podem encontrar produtos e serviços personalizados de acordo com suas necessidades específicas de costura.<br>
+                  <span class="text-modal">Limitações:</span><br>
+                  <span class="text-modal">Complexidade do Backend:</span>Implementar e manter o backend pode ser complexo, especialmente em projetos de grande escala.<br>
+                  <span class="text-modal">Dependência de Conectividade:</span>A funcionalidade do site depende da conectividade com a internet, o que pode ser uma limitação em áreas com conexões instáveis.<br>
+                  <span class="text-modal">Grandes Projetos que Utilizam tecnologias semelhantes:</span><br>
+                  Etsy: Uma plataforma online para compra e venda de produtos artesanais, incluindo itens de costura.<br>
+                  Spoonflower: Um mercado online onde os usuários podem projetar, imprimir e vender seus próprios tecidos personalizados.<br>
+                  Sewport: Uma plataforma online que conecta designers de moda e marcas a fabricantes de roupas em todo o mundo.<br>
+                  Fabricly: Uma plataforma de comércio eletrônico que oferece roupas feitas sob medida e personalizadas.<br>
+                  Mood Fabrics: Um varejista online de tecidos de alta qualidade, com uma ampla seleção para entusiastas da costura.<br>
+                  BurdaStyle: Uma comunidade online para entusiastas de costura, oferecendo padrões, tutoriais e inspiração para projetos de costura.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="projects">
-          <img src="/img/costura.jpg" class="image-projects" alt="">
-          <h3 class="text-title-2">Ana Claudia Confecções</h3>
-          <p class="text-paragraph-2 descricao-projeto">Landing page</p>
+          <img src="/img/clinica.jpg" class="image-projects" alt="">
+          <h3 class="text-title-2 text-project">RY Odontologia</h3>
+          <p class="text-paragraph-2 descricao-projeto">Site da clinica odontologica usando tecnologias para oferecer uma experiência informativa e acessível aos pacientes.</p>
           <p class="botoes-projects">
             <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
-            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="false">View</a>
+            <button type="button" class="botao-projects" data-bs-toggle="modal" data-bs-target="#Modal2">View</button>
           </p>
         </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">RY Odontologia</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Desenvolver um site para uma clínica odontológica envolve o uso de tecnologias além de bancos de dados. O objetivo é oferecer aos pacientes uma experiência intuitiva para acessar informações sobre tratamentos, agendar consultas e entrar em contato com a clínica, proporcionando assim uma experiência moderna e conveniente de cuidados dentários.
+                </p>
+                <p><span class="text-modal">Nome:</span> RY Odontologia <br>
+                  <span class="text-modal">Site Oficial:</span> www.ryodontologia.com <br>
+                  Definição da Tecnologia: O site da clínica odontológica RY Odontologia é desenvolvido utilizando a plataforma Node.js. Node.js é uma plataforma de desenvolvimento em JavaScript que permite a criação de aplicativos de rede escaláveis e de alta performance. Ele utiliza um modelo de I/O não bloqueante e orientado a eventos, adequado para aplicações em tempo real com troca intensiva de dados..<br>
+                  <span class="text-modal">Prós:</span><br>
+                  <span class="text-modal">Escalabilidade:</span> Node.js é conhecido por sua capacidade de lidar com um grande número de conexões simultâneas, tornando-o ideal para aplicações que exigem escalabilidade.<br>
+                  <span class="text-modal">Ecossistema Robusto: </span> Node.js possui um vasto ecossistema de bibliotecas e ferramentas que facilitam o desenvolvimento e a manutenção de aplicações web.<br>
+                  <span class="text-modal">Limitações:</span><br>
+                  <span class="text-modal">Single-threaded:</span> Node.js opera em um único thread de CPU, o que pode resultar em gargalos de desempenho em operações intensivas de CPU.<br>
+                  <span class="text-modal">Complexidade de Código Assíncrono:</span>Lidar com callbacks e promessas pode aumentar a complexidade do código, especialmente em projetos de grande escala.<br>
+                  <span class="text-modal">Grandes Projetos que Utilizam tecnologias semelhantes:</span><br>
+                  Uber: Plataforma de compartilhamento de carros.<br>
+                  Netflix: Serviço de streaming de vídeo.<br>
+                  LinkedIn: Rede social profissional.<br>
+                  Walmart: Gigante do varejo.<br>
+                  Trello: Aplicativo de gerenciamento de projetos.<br>
+                  NASA: Agência espacial dos Estados Unidos.<br>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="projects">
-          <img src="/img/costura.jpg" class="image-projects" alt="">
-          <h3 class="text-title-2">Ana Claudia Confecções</h3>
-          <p class="text-paragraph-2 descricao-projeto">Landing page</p>
-          <p class="botoes-projects">
+          <img src="/img/coffe.jpg" class="image-projects" alt="">
+          <h3 class="text-title-2 text-project">Coffe Pink</h3>
+          <p class="text-paragraph-2 descricao-projeto">Desenvolvimento de um site dinamico para cafeteria envolve tecnologias como HTML, CSS, JavaScript, React/Vue.js e Node.js/Django.</p>
+          <div class="botoes-projects">
             <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="true">Github</a>
-            <a href="https://github.com/kellynobre" target="_blank" class="botao-projects" disabled="false">View</a>
-          </p>
+
+            <button type="button" class="botao-projects" data-bs-toggle="modal" data-bs-target="#Modal3">View</button>
+          </div>
+        </div>
+        <!-- Modal 3 -->
+        <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Coffe Pink</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  O desenvolvimento de um site para uma cafeteria envolve o uso de tecnologias para criar uma interface visualmente atraente e responsiva. O objetivo é proporcionar aos clientes uma plataforma online onde possam visualizar o cardápio, fazer pedidos e reservas, garantindo uma experiência conveniente e agradável.
+                </p>
+                <p><span class="text-modal">Nome:</span> Coffe Pink <br>
+                  <span class="text-modal">Site Oficial:</span> www.cafeclique.com <br>
+                  Definição da Tecnologia: O site da cafeteria Coffe Pink é desenvolvido utilizando o framework Vue.js. Vue.js é um framework progressivo para a construção de interfaces de usuário, oferecendo simplicidade, flexibilidade e performance. Ele permite a criação de interfaces web interativas e dinâmicas, baseadas em componentes.<br>
+                  <span class="text-modal">Prós:</span><br>
+                  <span class="text-modal">Simplicidade:</span> Vue.js é conhecido por sua fácil aprendizagem e uso, o que facilita o desenvolvimento e a manutenção do site.<br>
+                  <span class="text-modal">Flexibilidade:</span> A estrutura modular do Vue.js permite integrar apenas os recursos necessários, tornando o site mais leve e eficiente.<br>
+                  <span class="text-modal">Performance:</span> Vue.js oferece um desempenho excepcional, garantindo uma experiência rápida e responsiva para os usuários do site.<br>
+                  <span class="text-modal">Limitações:</span><br>
+                  <span class="text-modal">Ecossistema Menor:</span> Comparado a outros frameworks como React e Angular, Vue.js possui um ecossistema menor, o que pode limitar a disponibilidade de recursos adicionais.<br>
+                  <span class="text-modal">Suporte Corporativo Limitado:</span> O suporte corporativo para Vue.js pode ser mais limitado em comparação com frameworks mais estabelecidos, o que pode impactar a resolução de problemas e atualizações.<br>
+                  <span class="text-modal">Curva de Aprendizado:</span> Embora seja mais simples do que muitos outros frameworks, Vue.js ainda apresenta uma curva de aprendizado para desenvolvedores que não estão familiarizados com sua sintaxe e conceitos.<br>
+                  <span class="text-modal">Grandes Projetos que Utilizam Vue.js:</span><br>
+                  Vue Storefront: Plataforma de comércio eletrônico de código aberto.<br>
+                  GitLab: Plataforma de desenvolvimento de software.<br>
+                  Laravel Nova: Ferramenta de administração do Laravel.<br>
+                  Alibaba: Plataforma de comércio eletrônico.<br>
+                  Behance: Plataforma de portfólio online.<br>
+                  Nintendo: Site oficial da Nintendo Japão.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -168,7 +283,8 @@
 
   <!--Experiência-->
   <section class="experiencia" id="experiencia" aria-label="Experiência"> <!--aria-label define como ponto de referencia; e o id serve para quando clicar no botão experiencia mostrar as mesmas informações de experiencia em outra página porque está referenciado no link com # (link interno)-->
-    <h2 class="subtitulo">Experiência</h2>
+
+    <h2 class="subtitulo-experiencia subtitulo">Experiência</h2>
     <div>
       <p class="experiencia-texto"> Atualmente desenvolvendo pequenos projetos utilizando: <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong></p> <!--strong destaca as palavras (negrito)-->
 
@@ -226,14 +342,13 @@
           <li>Formatação</li>
         </ul>
       </div>
-
     </div>
   </section>
 
   <!--Contato-->
   <section class="contato" id="contato" aria-label="Contato">
     <div class="contato-container">
-      <h2 class="subtitulo">Con ta <br>to</h2>
+      <h2 class="subtitulo-contato subtitulo">Con ta <br>to</h2>
       <div class="contatos">
         <form class="formulario-contato">
           <input type="name" class="form-control box" id="floatingInput" placeholder="Nome:">

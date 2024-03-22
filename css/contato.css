@@ -12,7 +12,20 @@
   gap: 100px;
   position: relative;
 }
-.contato-container .subtitulo {
+
+.contato-container::after {
+  /*detalhe*/
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/linha.png") no-repeat center;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  /*rotate: 30deg;*/
+}
+.contato-container .subtitulo-contato {
   color: white;
   padding: 0;
 }
@@ -55,4 +68,24 @@
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+@media (max-width: 800px) {
+  .contato-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 250px;
+  }
+  .contatos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .subtitulo-contato {
+    display: none;
+  }
 }

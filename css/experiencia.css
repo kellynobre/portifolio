@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.experiencia .subtitulo {
+.experiencia .subtitulo-experiencia {
   color: #641544;
 }
 
@@ -91,8 +91,13 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .experiencia .subtitulo {
-    color: #141414;
+  .experiencia .subtitulo-experiencia {
+    color: #641544;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
   }
   .experiencia-texto {
     font-size: 1.25rem;
@@ -102,6 +107,9 @@
     order: 1;
     width: initial;
     text-align: left;
+  }
+  .empresa-titulo {
+    text-align: center;
   }
 }
 

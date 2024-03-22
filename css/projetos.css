@@ -12,14 +12,23 @@
   gap: 100px;
   position: relative;
 }
-.projetos-container .subtitulo {
+.projetos-container::after {
+  /*detalhe*/
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/linha.png") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+}
+.projetos-container .subtitulo-projetos {
   color: white;
   max-width: 4ch;
   padding-top: 0;
 }
-.subtitulo-mobile {
-  display: none;
-}
+
 .projetos {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -69,8 +78,6 @@
   font-size: 1.125rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  border-color: #641544 !important;
-  border-width: 1px;
   border-radius: 1rem;
   gap: 0.75rem;
   align-items: center;
@@ -78,6 +85,7 @@
   height: 2.75rem;
   margin-top: 0;
   margin-bottom: 0;
+  background-color: #641544;
 }
 
 .botao-projects:hover {
@@ -87,6 +95,18 @@
 .descricao-projeto {
   margin-top: 0;
   margin-bottom: 0;
+  text-align: justify;
+}
+
+.links {
+  font-weight: 600;
+}
+.text-project {
+  text-align: center;
+}
+
+.text-modal {
+  font-weight: 700;
 }
 
 @media (max-width: 800px) {
@@ -100,7 +120,7 @@
     max-width: 300px;
     width: 100%;
   }
-  .subtitulo {
+  .subtitulo-projetos {
     display: none;
   }
   .projetos-container .subtitulo-mobile {

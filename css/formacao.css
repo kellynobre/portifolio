@@ -163,8 +163,8 @@
     padding: 60px 20px;
     gap: 40px;
   }
-  .formacao .subtitulo {
-    color: #ffffff;
+  .subtitulo-formacao {
+    display: none;
   }
   .formacao-texto {
     font-size: 1.25rem;
