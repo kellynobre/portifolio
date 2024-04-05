@@ -15,11 +15,21 @@
       <div class="contatos">
         <ul id="lista-mensagens"></ul>
       </div>
-      <button type="button" onclick="window.location.href='home.html'" class="btn btn-secondary btn-voltar">Voltar</button>
+      <div class="flex gap-[20px]">
+        <button type="button" class="btn btn-secondary btn-mensagens" id="limpar">Limpar Mensagens</button>
+        <button type="button" onclick="window.location.href='home.html'" class="btn btn-secondary btn-mensagens">Voltar</button>
+      </div>
     </div>
   </section>
 
   <script>
+    // Função para limpar todas as mensagens
+    document.getElementById("limpar").addEventListener("click", function () {
+      localStorage.removeItem("contact_messages");
+      document.getElementById('lista-mensagens').innerHTML = '';
+      alert("As mensagens enviadas foram removidas.");
+    });
+
     // Função para exibir as mensagens
     function exibirMensagens() {
       const storedData = localStorage.getItem('contact_messages');

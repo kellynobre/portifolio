@@ -32,8 +32,3 @@ document
     document.getElementById("email").value = "";
     document.getElementById("mensagem").value = "";
   });
-// Função para limpar todas as mensagens
-document.getElementById("limpar").addEventListener("click", function () {
-  localStorage.removeItem("contact_messages");
-  alert("As mensagens enviadas foram removidas.");
-});

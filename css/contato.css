@@ -12,6 +12,15 @@
   gap: 100px;
   position: relative;
 }
+.contato-container2 {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  position: relative;
+}
 
 .contato-container::after {
   /*detalhe*/
@@ -85,11 +94,11 @@
 #lista-mensagens {
   color: white;
 }
-.btn-voltar {
+.btn-mensagens {
   padding: 10px;
-  max-width: 100px;
+  border-radius: 5px;
 }
-.btn-voltar:hover {
+.btn-mensagens:hover {
   border-color: white !important;
   cursor: pointer;
 }
