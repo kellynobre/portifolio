@@ -29,7 +29,14 @@
   color: white;
   padding: 0;
 }
-
+.subtitulo-contato2 {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase; /*letra maiuscula*/
+  word-break: break-all; /*quebra palavra*/
+  max-width: 5ch; /*quebra em 4 letras*/
+  padding-top: 50%;
+}
 .formulario-contato {
   display: flex;
   flex-direction: column;
@@ -70,6 +77,23 @@
   align-items: center;
 }
 
+.botoes-formulario {
+  display: flex;
+  max-width: 350px;
+  gap: 8px;
+}
+#lista-mensagens {
+  color: white;
+}
+.btn-voltar {
+  padding: 10px;
+  max-width: 100px;
+}
+.btn-voltar:hover {
+  border-color: white !important;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .contato-container {
     display: grid;
@@ -87,5 +111,14 @@
   }
   .subtitulo-contato {
     display: none;
+  }
+
+  .contato-container2 {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 250px;
+    align-items: center;
+    justify-content: center;
   }
 }

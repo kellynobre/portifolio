@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Mensagens Recebidas</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section class="contato" id="contato" aria-label="Contato">
+    <div class="contato-container contato-container2">
+      <h2 class="subtitulo-contato subtitulo-contato2 subtitulo">Mensa<br>gem</h2>
+      <div class="contatos">
+        <ul id="lista-mensagens"></ul>
+      </div>
+      <button type="button" onclick="window.location.href='home.html'" class="btn btn-secondary btn-voltar">Voltar</button>
+    </div>
+  </section>
+
+  <script>
+    // Função para exibir as mensagens
+    function exibirMensagens() {
+      const storedData = localStorage.getItem('contact_messages');
+
+      if (storedData) {
+        const messages = JSON.parse(storedData);
+        const listaMensagens = document.getElementById('lista-mensagens');
+
+        messages.forEach((message, index) => {
+          const listItem = document.createElement('li');
+          listItem.textContent = `Mensagem ${index + 1}: ${message.nome} (${message.email}): ${message.mensagem}`;
+          listaMensagens.appendChild(listItem);
+        });
+      } else {
+        const noMessages = document.createElement('li');
+        noMessages.textContent = 'Nenhuma mensagem recebida.';
+        document.getElementById('lista-mensagens').appendChild(noMessages);
+      }
+    }
+
+    // Chama a função para exibir as mensagens ao carregar a página
+    exibirMensagens();
+  </script>
+</body>
+
+</html>

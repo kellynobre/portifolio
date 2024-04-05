@@ -348,16 +348,22 @@
     </div>
   </section>
 
+
   <!--Contato-->
   <section class="contato" id="contato" aria-label="Contato">
     <div class="contato-container">
       <h2 class="subtitulo-contato subtitulo">Con ta <br>to</h2>
       <div class="contatos">
         <form class="formulario-contato">
-          <input type="name" class="form-control box" id="floatingInput" placeholder="Nome:">
-          <input type="email" class="form-control box" id="floatingInput" placeholder="name@example.com">
-          <textarea class="form-control box" placeholder="Mensagem:" id="floatingTextarea2" style="height: 100px"></textarea>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <input type="text" class="form-control box" id="nome" placeholder="Nome:">
+          <input type="email" class="form-control box" id="email" placeholder="E-mail:">
+          <textarea class="form-control box" placeholder="Mensagem:" id="mensagem" style="height: 100px"></textarea>
+          <div class="botoes-formulario">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="button" class="btn btn-secondary" id="limpar">Limpar Mensagens</button>
+            <button type="button" onclick="window.location.href='mensagens.html'" class="btn btn-secondary">Mensagens Recebidas</button>
+            <!--<a href="mensagens.html" class="nav-link btn btn-primary" for="btnradio2">Mensagens Recebidas</a>-->
+          </div>
         </form>
 
         <div class="social-contato">
@@ -383,6 +389,7 @@
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 
 </html>
